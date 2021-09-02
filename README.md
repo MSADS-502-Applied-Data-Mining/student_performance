@@ -26,8 +26,13 @@ Our objective is to use data collected regarding the conditions under which a st
 
 ## Presentations and Projects
 
-* [Project Write-up]()
+* [Project Write-up](https://github.com/lshpaner/MSADS_502_Applied_Data_Mining_Student_Performance/blob/master/Student_Performance_Models.pdf)
 * [R Code](https://github.com/lshpaner/MSADS_502_Applied_Data_Mining_Student_Performance/blob/master/student_performance.md)
+
+## Original Data
+
+* [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Student+Performance)
+* [Dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip)
 
 ## Abstract
 
