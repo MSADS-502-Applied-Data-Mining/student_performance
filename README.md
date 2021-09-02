@@ -1,5 +1,9 @@
 # Predicting Student Performance in a Portuguese Secondary Institution
 
+## Completed: 
+
+![img](https://github.com/lshpaner/MSADS_502_Applied_Data_Mining_Student_Performance/blob/master/featured.png)
+
 # Abstract
 
 Qualitative and quantitative factors alike affect student grades.  We observed 1,044 students collectively from three terms of math and language arts classes of a Portuguese secondary institution to determine which of these factors is directly influenced by performance. Student grades were tallied over the three terms, from which performance was bisected by the median and binarized into two classes of 0 and 1 (“bad”, “good”, respectively). The dataset was further subjected to an 80:20 train-test split ratio to evaluate the model performance of data outside the training set visa vie implementation of six algorithms. The C5.0 and CART models produced accuracy scores of approximately 63%; whereas logistic regression and random forest models performed approximately 1% lower in terms of accuracy. Implementation of Naïve Bayes classification in conjunction with the neural network model, yielded more accurate results of 65% and 69%, respectively. We discuss other metrics like error rate and precision and note that each model, when cross-validated, has its own limitations that may inhibit or facilitate the prediction of student performance holistically. 
