@@ -1,10 +1,35 @@
 # Predicting Student Performance in a Portuguese Secondary Institution
 
-## Completed: 
+## Completed: 04/15/2021
 
 ![img](https://github.com/lshpaner/MSADS_502_Applied_Data_Mining_Student_Performance/blob/master/featured.png)
 
-# Abstract
+## Project Objective
+
+Our objective is to use data collected regarding the conditions under which a student's performance was either "good" or "bad" as determined by the median grades of both math and language arts classes of a Portuguese secondary institution.
+
+## Partners
+* [Juliet Sieland-Harris]()
+* [Dan Choi](https://github.com/dchoi-usd)
+
+## Methods
+* Data Exploration
+* Pre-processing
+* Data Visualization
+* Statistical modeling
+* Data modeling metrics
+
+## Technologies
+* R Programming (RStudio)
+* Word
+* Excel
+
+## Presentations and Projects
+
+* [Project Write-up]()
+* [R Code](https://github.com/lshpaner/MSADS_502_Applied_Data_Mining_Student_Performance/blob/master/student_performance.md)
+
+## Abstract
 
 Qualitative and quantitative factors alike affect student grades.  We observed 1,044 students collectively from three terms of math and language arts classes of a Portuguese secondary institution to determine which of these factors is directly influenced by performance. Student grades were tallied over the three terms, from which performance was bisected by the median and binarized into two classes of 0 and 1 (“bad”, “good”, respectively). The dataset was further subjected to an 80:20 train-test split ratio to evaluate the model performance of data outside the training set visa vie implementation of six algorithms. The C5.0 and CART models produced accuracy scores of approximately 63%; whereas logistic regression and random forest models performed approximately 1% lower in terms of accuracy. Implementation of Naïve Bayes classification in conjunction with the neural network model, yielded more accurate results of 65% and 69%, respectively. We discuss other metrics like error rate and precision and note that each model, when cross-validated, has its own limitations that may inhibit or facilitate the prediction of student performance holistically. 
 
@@ -14,7 +39,7 @@ Qualitative and quantitative factors alike affect student grades.  We observed 1
 
 *Keywords*: student performance, machine learning, ensemble methods, data mining
 
-# Code Sample
+## Code Sample
 
 ```{r}
 #read in the students in the math class
@@ -51,7 +76,7 @@ student_test$nursery <- as.factor(student_test$nursery)
 student_test$absences <- as.numeric(student_test$absences)
 student_test$failures <- as.numeric(student_test$failures)
 
-# C5.0 Model
+## C5.0 Model
 library(C50); library(caret)
 #Run training set through C5.0 to obtain Model 1, and assign to C5
 C5 <- C5.0(formula <- performance ~ address + famsup + studytime + nursery +
@@ -108,7 +133,7 @@ cat("\n Accuracy:",accuracy_c5, "\n Error Rate:",error_rate_c5,
 
 ```
 
-# Model Evaluation Table:
+## Model Evaluation Table:
 
 | **Evaluation Measure**                                                  | **C5.0**  | **CART**  | **Logistic Regression** | **Random Forest** | **Naive Bayes** | **Neural Network** |
 | ----------------------------------------------------------------------- | --------- | --------- | ----------------------- | ----------------- | --------------- | ------------------ |
