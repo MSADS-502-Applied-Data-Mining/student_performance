@@ -9,7 +9,7 @@
 Our objective is to use data collected regarding the conditions under which a student's performance was either "good" or "bad" as determined by the median grades of both math and language arts classes of a Portuguese secondary institution.
 
 ## Partners
-* [Juliet Sieland-Harris]()
+* [Juliet Sieland-Harris](https://github.com/JSielandHarris)
 * [Dan Choi](https://github.com/dchoi-usd)
 
 ## Methods
